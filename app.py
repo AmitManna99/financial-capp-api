@@ -39,6 +39,10 @@ def goalSIP():
     sip, invest = fc.goalSIP(target, time, rate)
     return jsonify({'Monthly SIP': sip, 'Invested': invest})
 
+@app.route('/')
+def hello():
+    return "Hello World"
+
 
 if __name__ == "__main__":
     app.run()
