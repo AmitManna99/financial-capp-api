@@ -1,0 +1,1 @@
+web: gunicorn financial-capp-api.wsgi:application --log-file -
